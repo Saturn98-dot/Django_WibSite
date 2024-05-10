@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title> Турлыгул Нуртас </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+
+
+</head>
+
+<body>
+<header id="header-selection">
+
+    <div class="container container-header">
+
+        <div class="header">
+
+            <div class="nav-main__one">
+                <ul class="nav-main__list__one">
+                    <li class="nav-main__item__one">
+                        <img class="blue_square" src="https://kartinki.pibig.info/uploads/posts/2023-12/thumbs/1701854359_kartinki-pibig-info-p-sinii-kvadrat-kartinka-krasivo-67.jpg">
+                        <a class="nav-main__link__two" href="http://127.0.0.1:8000/">ТУРЛЫГУЛ НУРТАС</a>
+                        <a class="nav-main__link__one" href="http://127.0.0.1:8000/"> / ИНЖЕНЕР ПРОГРАММИСТ</a>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="nav-main">
+
+                <ul class="nav-main__list">
+                    <li class="nav-main__item">
+                        <a class="nav-main__link"  href="http://127.0.0.1:8000/">ОБО МНЕ</a>
+                    </li>
+                </ul>
+
+                <ul class="nav-main__list">
+                    <li class="nav-main__item">
+                        <a class="nav-main__link " href="http://127.0.0.1:8000/resume/">РЕЗЮМЕ</a>
+                    </li>
+                </ul>
+
+                <ul class="nav-main__list">
+                    <li class="nav-main__item">
+                        <a class="nav-main__link" href="http://127.0.0.1:8000/projects/">ПРОЕКТЫ</a>
+                    </li>
+                </ul>
+
+                <ul class="nav-main__list">
+                    <li class="nav-main__item">
+                        <a class="nav-main__link" href="http://127.0.0.1:8000/contact/">КОНТАКТ</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+
+</header>
+
+    {% block content %}
+
+    {% endblock content %}
+<footer id="footer-section">
+    <nav class="footer-nav-wrap">
+        <div class="footer-nav">
+            <h3 class="footer__title">Позвонить</h3>
+            <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                    <a class="footer-nav__link">8 (707) 637-52-47</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-nav">
+            <h3 class="footer__title">Писать</h3>
+            <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                    <a class="footer-nav__link">n.turlygul@mail.ru</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-nav">
+            <h3 class="footer__title">Социальные сети</h3>
+            <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                    <div class="footer-social-links">
+                        <a class="footer-social__link" href="https://www.facebook.com/profile.php?id=100064986744968"></a>
+                        <a class="footer-social__link" href="https://twitter.com/NTurlygul"></a>
+                        <a class="footer-social__link" href="https://www.linkedin.com/in/turlygul-nurtas-141374264/"></a>
+                        <a class="footer-social__link" href="https://www.instagram.com/nurtasturlygul/"></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+</footer>
+
+
+
+    <script src="static/js/main.js"></script>
+</body>
+
+</html>

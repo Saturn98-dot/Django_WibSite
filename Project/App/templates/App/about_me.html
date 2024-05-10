@@ -1,0 +1,46 @@
+{% extends 'App/main.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<main class="main-body">
+    <section id="profile-section" class="section-main">
+        <div class="container-img">
+            <div class="profile-wrap">
+                <div class="profile">
+                    <img class="profile-img" src="https://i.pinimg.com/originals/01/68/4a/01684ab6e3776b649323c6952c605d39.png" alt="#">
+                    <h3 class="profile__name"> Турлыгул Нуртас</h3>
+                    <hr class="blue-line">
+                    <p class="section-text"> Инженер программист </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-social">
+            <div class="main-social-links">
+                <a class="main-social__link" href="https://www.facebook.com/profile.php?id=100064986744968"></a>
+                <a class="main-social__link" href="https://twitter.com/NTurlygul"></a>
+                <a class="main-social__link" href="https://www.linkedin.com/in/turlygul-nurtas-141374264/"></a>
+                <a class="main-social__link" href="https://www.instagram.com/nurtasturlygul/"></a>
+            </div>
+        </div>
+
+        <div class="hello-about">
+            <div class="hello">
+                <h2 class="hello__title">ЗДРАВСТВУЙТЕ</h2>
+                <p class="hello__subtitle">Вот кто я и чем занимаюсь</p>
+
+            <div class="banner-btn-wrap">
+                <a class="banner__link" href="http://127.0.0.1:8000/resume/">РЕЗЮМЕ</a>
+                <a class="banner__link" href="http://127.0.0.1:8000/projects/">ПРОЕКТЫ</a>
+            </div>
+
+                <p class="about__text">Я целеустремлённый и ответственный профессионал, стремящийся к постоянному росту и развитию в своей карьере.</p>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+{% endblock content %}

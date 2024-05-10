@@ -1,0 +1,65 @@
+{% extends 'App/main.html' %}
+{% load static %}
+
+{% block content %}
+
+<main class="main-body-contact">
+
+    <section id="profile-section-contact" class="section-main-contact">
+
+        <div class="container-contact">
+
+            <div class="title-contact">
+                <img class="blue_square_contact" src="https://kartinki.pibig.info/uploads/posts/2023-12/thumbs/1701854359_kartinki-pibig-info-p-sinii-kvadrat-kartinka-krasivo-67.jpg">
+                <h3 class="text-title-contact">Давай поговорим</h3>
+            </div>
+
+            <div class="contact-message" >
+                <form class="separation-contact-message" method="post">
+                        {% csrf_token %}
+
+                    <div class="class-first-name-last-name">
+                        <div class="first-name-class">
+                            <p class="first-name-last">Имя</p>
+                            {{ form.name }}
+                            <p class="first-last-name-input">
+                        </div>
+                        <div class="last-name-class">
+                            <p class="first-name-last">Фамилия</p>
+                            {{ form.lastname }}
+                            <p class="first-last-name-input">
+                        </div>
+                    </div>
+
+                    <div class="email">
+                        <p class="p-email">Email</p>
+                        {{ form.email }}
+                        <p class="email-subject-message-input">
+                    </div>
+
+                    <div class="subject">
+                        <p class="p-subject">Тема</p>
+                        {{ form.subject }}
+                        <p class="email-subject-message-input" >
+                    </div>
+
+                    <div class="message">
+                        <p class="p-message ">Сообщение</p>
+                            {{ form.message }}
+                        <p class="email-subject-message-input">
+                    </div>
+
+                    <div class="send">
+                        <button class="btn-send" type="submit">Отправить</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+{% endblock content %}
